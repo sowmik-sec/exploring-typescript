@@ -1,53 +1,53 @@
-type User = {
-  name: string;
-  age: number;
-};
-
-type extendedUser = User & {
-  role: string;
-};
-
-interface IUser {
-  name: string;
-  age: number;
-}
-
-// const userWithTypeAsias: User = {
-//   name: "Type Alias",
-//   age: 100,
+// type User = {
+//   name: string;
+//   age: number;
 // };
 
-// const userWithInterface: IUser = {
-//   name: "Vagirothi",
-//   age: 1000,
+// type extendedUser = User & {
+//   role: string;
 // };
 
-interface IExtendedUser extends IUser {
-  role: string;
-}
+// interface IUser {
+//   name: string;
+//   age: number;
+// }
 
-type rollNumber = number;
+// // const userWithTypeAsias: User = {
+// //   name: "Type Alias",
+// //   age: 100,
+// // };
 
-// Object, Function, Array
+// // const userWithInterface: IUser = {
+// //   name: "Vagirothi",
+// //   age: 1000,
+// // };
 
-type addNumbersType = (num1: number, num2: number) => number;
+// interface IExtendedUser extends IUser {
+//   role: string;
+// }
 
-interface IAddNumbers {
-  (num1: number, num2: number): number;
-}
+// type rollNumber = number;
 
-type rollNumbersType = number[];
+// // Object, Function, Array
 
-interface IRollNumbers {
-  [index: number]: number;
-}
+// type addNumbersType = (num1: number, num2: number) => number;
 
-const rollNumbers: IRollNumbers = [1, 2, 3];
+// interface IAddNumbers {
+//   (num1: number, num2: number): number;
+// }
 
-const addNumbers: IAddNumbers = (num1, num2) => num1 + num2;
+// type rollNumbersType = number[];
 
-const user: extendedUser = {
-  name: "Manush",
-  age: 23,
-  role: "admin",
-};
+// interface IRollNumbers {
+//   [index: number]: number;
+// }
+
+// const rollNumbers: IRollNumbers = [1, 2, 3];
+
+// const addNumbers: IAddNumbers = (num1, num2) => num1 + num2;
+
+// const user: extendedUser = {
+//   name: "Manush",
+//   age: 23,
+//   role: "admin",
+// };
